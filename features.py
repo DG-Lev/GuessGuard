@@ -1,3 +1,5 @@
+from zxcvbn import zxcvbn
+
 uppercase_count = 0
 lowercase_count = 0
 digit_count = 0
@@ -18,3 +20,6 @@ for char in password:
 password_length = len(password)
 
 print("Uppercase:", uppercase_count, "Lowercase:", lowercase_count, "Digits:", digit_count, "Symbols:", symbol_count, "Length:", password_length)
+
+result = zxcvbn(password)
+print(result)
