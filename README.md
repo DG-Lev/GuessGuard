@@ -1,4 +1,5 @@
 # GuessGuard
+![Status](https://img.shields.io/badge/status-in%20development-blue)
 
 GuessGuard is a password strength analyzer built with machine learning.
 
