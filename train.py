@@ -26,3 +26,7 @@ from sklearn.metrics import mean_absolute_error
 predictions = model.predict(x_test)
 mae = mean_absolute_error(y_test, predictions)
 print("MAE:", round(mae, 3))
+
+import joblib
+joblib.dump(model, 'model.pkl')
+print("Model saved as model.pkl")
